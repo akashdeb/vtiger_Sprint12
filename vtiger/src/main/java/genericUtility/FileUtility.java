@@ -18,7 +18,7 @@ public class FileUtility {
 	 */
 	public String fetchDataFromPropertyFile(String key) throws IOException {
 		
-		FileInputStream fis = new FileInputStream("C:\\Users\\User\\Desktop\\Scripts\\eclipse-workspace_October2023_Project\\vtiger\\src\\main\\resources\\commonData.properties");
+		FileInputStream fis = new FileInputStream(IPathConstant.COMMON_DATA_FILE_PATH);
 		Properties prop = new Properties();
 		
 		prop.load(fis);

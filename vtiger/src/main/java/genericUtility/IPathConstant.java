@@ -11,12 +11,14 @@ public interface IPathConstant {
 	String PRODUCT_SHEETNAME = "Product";
 	String VENDOR_SHEETNAME = "Vendor";
 	
-	String PRODUCT_IMAGE_PATH = "C:\\Users\\User\\Desktop\\Scripts\\eclipse-workspace_October2023_Project\\vtiger\\src\\test\\resources\\cleanliness-is-next-to-godliness-text-written-on-blue-stamp-sign-2H00F27.jpg";
+	String PRODUCT_IMAGE_PATH = "C:\\Users\\User\\git\\repository_vtiger_Sprint12\\vtiger\\src\\test\\resources\\upload.jpg";
 
 	String DATABASE_URL = "jdbc:mysql://localhost:3306/vtiger";
 	String DATABASE_USERNAME = "root";
 	String DATABASE_PASSWORD = "root";
-
+	
+	String COMMON_DATA_FILE_PATH = "./src/main/resources/commonData.properties";
+	String EXCEL_DATA_FILE_PATH = "C:\\Users\\User\\git\\repository_vtiger_Sprint12\\vtiger\\src\\test\\resources\\testData\\VtgerTestData.xlsx";
 	
 	
 

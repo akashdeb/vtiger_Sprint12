@@ -6,10 +6,10 @@
       <class name="product_Module.ToCreateAProductTest">
         <methods>
           <include name="acConfig"/>
+          <include name="toCreateAProductWithVendorInformationTest"/>
           <include name="amConfig"/>
           <include name="bmConfig"/>
           <include name="bcConfig"/>
-          <include name="toCreateAProductWithVendorInformation"/>
           <include name="bsConfig"/>
           <include name="asConfig"/>
         </methods>

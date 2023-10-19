@@ -26,8 +26,7 @@ public class ExcelUtility {
 	public String fetchStringDataFromExcelSheet(String sheetName, int rowNo, int cellNo)
 			throws EncryptedDocumentException, IOException {
 
-		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\User\\Desktop\\Scripts\\eclipse-workspace_October2023_Project\\vtiger\\src\\test\\resources\\VtgerTestData.xlsx");
+		FileInputStream fis = new FileInputStream(IPathConstant.EXCEL_DATA_FILE_PATH);
 
 		return WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowNo).getCell(cellNo).getStringCellValue();
 
@@ -45,8 +44,7 @@ public class ExcelUtility {
 	public long fetchNumericDataFromExcelSheet(String sheetName, int rowNo, int cellNo)
 			throws EncryptedDocumentException, IOException {
 
-		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\User\\Desktop\\Scripts\\eclipse-workspace_October2023_Project\\vtiger\\src\\test\\resources\\VtgerTestData.xlsx");
+		FileInputStream fis = new FileInputStream(IPathConstant.EXCEL_DATA_FILE_PATH);
 
 		return (long)WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowNo).getCell(cellNo).getNumericCellValue();
 
@@ -64,8 +62,7 @@ public class ExcelUtility {
 	public boolean fetchBooleanDataFromExcelSheet(String sheetName, int rowNo, int cellNo)
 			throws EncryptedDocumentException, IOException {
 
-		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\User\\Desktop\\Scripts\\eclipse-workspace_October2023_Project\\vtiger\\src\\test\\resources\\VtgerTestData.xlsx");
+		FileInputStream fis = new FileInputStream(IPathConstant.EXCEL_DATA_FILE_PATH);
 
 		return WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowNo).getCell(cellNo).getBooleanCellValue();
 
@@ -74,8 +71,7 @@ public class ExcelUtility {
 	public String fetchDateDataFromExcelSheet(String sheetName, int rowNo, int cellNo)
 			throws EncryptedDocumentException, IOException {
 
-		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\User\\Desktop\\Scripts\\eclipse-workspace_October2023_Project\\vtiger\\src\\test\\resources\\VtgerTestData.xlsx");
+		FileInputStream fis = new FileInputStream(IPathConstant.EXCEL_DATA_FILE_PATH);
 
 		return WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowNo).getCell(cellNo).getLocalDateTimeCellValue().toString().substring(0, 10);
 
