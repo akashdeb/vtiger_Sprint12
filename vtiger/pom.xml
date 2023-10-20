@@ -45,9 +45,15 @@
 			<version>23.3.0.23.09</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.9</version>
+		</dependency>
+
 	</dependencies>
 
-	<profiles>
+	<!--  <profiles>
 		<profile>
 			<id>smoke</id>
 			<build>
@@ -82,8 +88,8 @@
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
-						
-						
+
+
 					</plugins>
 				</pluginManagement>
 			</build>
@@ -103,8 +109,8 @@
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
-						
-						
+
+
 					</plugins>
 				</pluginManagement>
 			</build>
@@ -115,7 +121,7 @@
 
 	</profiles>
 
-
+-->
 
 
 
