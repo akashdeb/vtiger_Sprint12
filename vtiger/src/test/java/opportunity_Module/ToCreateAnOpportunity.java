@@ -6,7 +6,7 @@ import genericUtility.BaseClass;
 
 public class ToCreateAnOpportunity extends BaseClass{
 	
-	@Test
+	@Test(groups = "regression")
 	public void createOpportunity() {
 		System.out.println("Opportunity is created");
 

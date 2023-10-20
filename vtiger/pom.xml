@@ -45,10 +45,7 @@
 			<version>23.3.0.23.09</version>
 		</dependency>
 
-
-
 	</dependencies>
-
 
 	<profiles>
 		<profile>
@@ -61,19 +58,71 @@
 							<artifactId>maven-surefire-plugin</artifactId>
 							<version>3.1.2</version>
 							<configuration>
-							<suiteXmlFiles>
-								<suiteXmlFile>src\test\resources\suiteXMLFiles\smokeTesting.xml</suiteXmlFile>
-							
-							</suiteXmlFiles>
+								<suiteXmlFiles>
+									<suiteXmlFile>src\test\resources\suiteXMLFiles\SmokeTestng.xml</suiteXmlFile>
+								</suiteXmlFiles>
 							</configuration>
 						</plugin>
 					</plugins>
 				</pluginManagement>
 			</build>
-
+		</profile>
+		<profile>
+			<id>regression</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.1.2</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>src\test\resources\suiteXMLFiles\RegressionTesting.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+						
+						
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>batch</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.1.2</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>src\test\resources\suiteXMLFiles\BatchExecution.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+						
+						
+					</plugins>
+				</pluginManagement>
+			</build>
 		</profile>
 
 
+
+
 	</profiles>
+
+
+
+
+
+
+
+
+
+
 
 </project>
