@@ -71,6 +71,8 @@ public class ToCreateAProductTest extends BaseClass {
 		//Verifying product
 		Assert.assertTrue(actualProductName.contains(productName));
 		System.out.println("Pass: the product name is verified");
+				System.out.println("Pass: the product name is verified");
+
 		
 	}
 
