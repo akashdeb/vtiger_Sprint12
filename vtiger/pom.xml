@@ -53,7 +53,7 @@
 
 	</dependencies>
 
-	<!--  <profiles>
+	<profiles>
 		<profile>
 			<id>smoke</id>
 			<build>
@@ -86,6 +86,9 @@
 								<suiteXmlFiles>
 									<suiteXmlFile>src\test\resources\suiteXMLFiles\RegressionTesting.xml</suiteXmlFile>
 								</suiteXmlFiles>
+								<systemPropertyVariables>
+								<browser>${browser}</browser>
+								</systemPropertyVariables>
 							</configuration>
 						</plugin>
 
@@ -107,6 +110,9 @@
 								<suiteXmlFiles>
 									<suiteXmlFile>src\test\resources\suiteXMLFiles\BatchExecution.xml</suiteXmlFile>
 								</suiteXmlFiles>
+								<systemPropertyVariables>
+									<browser>${browser}</browser>
+								</systemPropertyVariables>
 							</configuration>
 						</plugin>
 
@@ -121,7 +127,7 @@
 
 	</profiles>
 
--->
+
 
 
 

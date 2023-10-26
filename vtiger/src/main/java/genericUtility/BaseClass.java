@@ -16,6 +16,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.mysql.cj.jdbc.Driver;
 
@@ -52,10 +53,11 @@ public class BaseClass {
 		
 	}
 	
+	@Parameters("browser")
 	@BeforeClass(groups = {"smoke", "regression"})
-	public void bcConfig() throws IOException {
+	public void bcConfig(String browser) throws IOException {
 		
-		String browser = fUtils.fetchDataFromPropertyFile("browser");
+		//String browser = fUtils.fetchDataFromPropertyFile("browser");
 		String url = fUtils.fetchDataFromPropertyFile("url");
 
 		
